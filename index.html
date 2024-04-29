@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(204, 204, 255);"></body>
+    <body>
+    <script>  function playMusic(){
+            var audio = new Audio('audio_file.mp3');
+            audio.play();
+        }
+    </script>
+
+        <div class="row">
+            <div class="image-container"><id="1" img src="icons/9-02.png" height="200" width="200" onclick="playSound('sounds/hide.mp3','1','9-02')"/></div>
+            <div class="image-container"><id="2" img src="icons/9-03.png" height="200" width="200" onclick="playSound('sounds/glacier.mp3','2','9-03')"/></div>
+            <div class="image-container"><id="3" img src="icons/9-01.png" height="200" width="200" onclick="playSound('sounds/meditate.mp3','3','9-01')"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><id="4" img src="icons/9-08.png" height="200" width="200" onclick="playSound('sounds/weather.mp3','4','9-08')"/></div>
+            <div class="image-container"><id="5" img src="icons/9-06.png" height="200" width="200" onclick="playSound('sounds/star.mp3','5','9-06')"/></div>
+            <div class="image-container"><id="6" img src="icons/9-07.png" height="200" width="200" onclick="playSound('sounds/boardgame.mp3','6','9-07')"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><id="7" img src="icons/9-04.png" height="200" width="200" onclick="playSound('sounds/bird.mp3','7','9-04')"/></div>
+            <div class="image-container"><id="8" img src="icons/9-05.png" height="200" width="200" onclick="playSound('sounds/virtual.mp3','8','9-05')"/></div>
+            <div class="image-container"><id="9" img src="icons/9-09.png" height="200" width="200" onclick="playSound('sounds/whitenoise.mp3','9','9-08')"/></div>
+        </div>
+        
+    
+
+<script>
+   
+
+    function playSound(str,id,index){
+        var audio = new Audio(str);
+        audio.play();
+        var element = document.getElementById(id); 
+        element.src = `icons/${ index }.png`;
+    }
+</script>
+
+<div class="row">
+    <div class="image-container"><img id="1" src="icons/9-02.png" height="200" width="200" onclick="playSound('sounds/hide.mp3','1','92')"/></div>
+    <div class="image-container"><img id="2" src="icons/9-03.png" height="200" width="200" onclick="playSound('sounds/glacier.mp3','2','93')"/></div>
+    <div class="image-container"><img id="3" src="icons/9-01.png" height="200" width="200" onclick="playSound('sounds/meditate.mp3','3','91')"/></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="4" src="icons/9-08.png" height="200" width="200" onclick="playSound('sounds/weather.mp3','4','98')"/></div>
+    <div class="image-container"><img id="5" src="icons/9-06.png" height="200" width="200" onclick="playSound('sounds/star.mp3','5','96')"/></div>
+    <div class="image-container"><img id="6" src="icons/9-07.png" height="200" width="200" onclick="playSound('sounds/boardgame.mp3','6','97')"/></div>
+    </div>
+
+<div class="row">
+    <div class="image-container"><img id="7" src="icons/9-04.png" height="200" width="200" onclick="playSound('sounds/bird.mp3','7','94')"/></div>
+    <div class="image-container"><img id="8" src="icons/9-05.png" height="200" width="200" onclick="playSound('sounds/virtual.mp3','8','95')"/></div>
+    <div class="image-container"><img id="9" src="icons/9-09.png" height="200" width="200" onclick="playSound('sounds/whitenoise.mp3','9','99')"/></div>
+</div>
+<!--
+<div class="row">
+    <div class="image-container"><img id="hide" src="icons/9-02.png" height="200" width="200"/></div>
+    <div class="image-container"><img id="glacier"src="icons/9-03.png" height="200" width="200"/></div>
+    <div class="image-container"><img id="meditate"src="icons/9-01.png" height="200" width="200"/></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="weather"src="icons/9-08.png" height="200" width="200"/></div>
+    <div class="image-container"><img id="star"src="icons/9-06.png" height="200" width="200"/></div>
+    <div class="image-container"><img id="boardgame"src="icons/9-07.png" height="200" width="200"/></div>
+    </div>
+
+<div class="row">
+    <div class="image-container"><img id="bird"src="icons/9-04.png" height="200" width="200"/></div>
+    <div class="image-container"><img id="virtual"src="icons/9-05.png" height="200" width="200"/></div>
+    <div class="image-container"><img id="9" img src="icons/9-09.png" height="200" width="200" /></div>
+</div>
+--->
+
+</body>
+
+</html>
